@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            font-family: sans-serif;
+        }
+        .mylist li{
+            color: gray;
+            cursor: pointer;  
+        }
+        .mylist li:hover, ul li:focus{
+            color: red;
+        }
+        @media screen and (min-width: 960px) {
+            .logo2 img{
+                display: block;
+            }
+            .logo2 h4{
+                display: block;
+            }
+            .logo1{
+                display: none;
+            } 
+        }
+        @media screen and (max-width: 576px) {
+            .logo1{
+                display: block;
+            }
+            .logo2 img{
+                display: none;
+            }
+            .logo2 h4{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .item2 img, h4{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .item2 li{
+                display: none;
+            }
+            .item2 img, h4{
+                display: block;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .item3 img{
+                display: none;
+            }
+            .item3 button{
+                display: block;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .item3 button{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            section .secitem1{
+                position: absolute;
+                margin-left: 70px;
+                margin-top: 100px;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .secitem2 {
+                margin-top: 350px;
+                position: absolute;
+            }
+            .secitem2 .img1{
+                position: relative;
+                top: -700px;
+                left: 500px;
+            }
+            .secitem2 .img2{
+                position: relative;
+                top: -280px;
+                left: 550px;
+            }
+            .secitem2 .img3{
+                position: relative;
+                top: -305px;
+                left: 80px;
+            }
+            .secitem2 .img4{
+                position: relative;
+                top: -730px;
+                left: 670px;
+                height: 400px;
+            }
+            .secitem2 .img5{
+                position: relative;
+                top: -700px;
+                left: 750px;
+            }
+            .secitem2 .img6{
+                position: relative;
+                top: -600px;
+                left: 280px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .secitem2{
+                display: block;
+                margin-top: 100px;
+                position: absolute;
+            }
+            .secitem2 .img1{
+                position: relative;
+            }
+            .secitem2 .img2{
+                position: relative;
+            }
+            .secitem2 .img3{
+                position: relative;
+                top: -480px;
+                left: -10px;
+            }
+            .secitem2 .img4{
+                position: relative;
+                top:-900px; 
+                left: 100px; 
+                height: 400px;
+            }
+            .secitem2 .img5{
+                position: relative; 
+                top: -890px; 
+                left: 150px;
+            }
+            .secitem2 .img6{
+                position: relative; 
+                top: -800px; 
+                left: -300px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .buttons{
+                position: absolute;
+                top: 1050px;
+                display: flex;
+                width: auto;
+                justify-self:center; 
+                flex-direction: column;
+                margin-left: 100px;
+            }
+            .buttons .threeitem1{
+                display: flex;
+                width: auto;
+                justify-content: center;
+                
+            }
+            .buttons .threeitem2{
+                position: relative;
+                left: 200px;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .buttons{
+                position: absolute;
+                margin-left: 120px;
+                margin-top: 350px;
+            }
+            .buttons .threeitem2{
+                position: relative;
+                left: 250px;
+            }
+        }
+        footer{
+            background: #1a0350ef;
+            color: white;
+        }
+        @media screen and (min-width: 960px) {
+            footer{
+                position: relative;
+                top: 550px;
+                display: inline-flex;
+                width: 100vw;
+                justify-content: space-evenly;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            footer{
+                position: relative;
+                top: 900px;
+                display: grid;
+                place-items: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            footer div{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="item1" style="padding: 20px;">
+            <div class="logo1">
+                <img src="menu-icon.png" style="height: 40px; width: 40px;">
+            </div> 
+            <div class="logo2" style="display: inline-flex; gap:10px;">
+                <img src="projectlogo.png" style="height: 40px; width: 40px;">
+                <h4 style="margin-top: 10px;">E GURU</h4>
+            </div>
+        </div>
+        <div class="item2" style="display: inline-flex; gap:10px; padding: 20px;">
+            <img src="projectlogo.png" style="height: 40px; width: 40px;">
+            <h4 style="margin-top: 10px;">E GURU</h4>
+            <ul style="display: inline-flex; list-style-type: none; gap: 40px;" class="mylist">
+                <li><a href="#" style="text-decoration: none; color: gray; font-weight: bold;">Home</a></li>
+                <li><a href="#" style="text-decoration: none; color: gray; font-weight: bold;">About Us</a></li>
+                <li><a href="#" style="text-decoration: none; color: gray; font-weight: bold;"> Features</a></li>
+                <li><a href="#" style="text-decoration: none; color: gray; font-weight: bold;">How it works</a></li>
+            </ul>
+        </div>
+        <div class="item3" style="padding: 20px;">
+            <img src="user-profile.png" style="height: 40px; width: 40px;">
+            <button style="height: auto; width: auto; padding: 15px; border-width: 2px; border-style: solid; border-color: gray; border-radius: 10px;">Sign Up</button>
+        </div>
+    </header>
+    <section style="padding-left: 50px;">
+        <div class="secitem1">
+            <h1 style="font-weight: bolder; font-family: sans-serif; font-size:xx-large">
+                STUDY FROM <br> HOME WITH EXPERT
+            </h1>
+            <p style="color: gray; border-width: 2px; border-left: 2px; border-left-style: solid; border-left-color: gray; padding: 15px; font-size: larger;">
+                A learning system based on formalised <br> teaching with the help of resources.
+            </p>
+        </div>
+        <div class="secitem2">
+            <img src="orange-arrow.png" class="img1">
+            <img src="main-image-bg.png" class="img2">
+            <img src="main-image-pattern.png" class="img3" style="">
+            <img src="main-image.png" class="img4" style="">
+            <img src="circle.png" class="img5" style="">
+            <img src="green-arrow.png" class="img6" style="">
+        </div>
+    </section>
+    <div class="buttons">
+        <div class="threeitem1">
+            <button style="background-color: orangered; color: white; width: 150px; height: 50px; border-style: none;">
+                Get Started
+            </button>
+            <button style="width: 150px; height: 50px; border-width: 2px; border-color: gray; margin-left: 10px;">
+                Learn More
+            </button>
+        </div>
+        <div class="threeitem2">
+            <img src="curve-arrow.png" class="" style="">
+        </div>
+    </div>
+    <footer style="font-family: sans-serif;">
+        <div>
+            <h2>
+                WHY WE <br> ARE THE BEST
+            </h2>
+            <p>
+                An learning system based <br> on formalised teaching with
+            </p>
+        </div>
+        <div>
+            <img src="vector3.png" style="background: #07c9b6; padding: 20px; border-radius: 20px;">
+            <h3>
+                EXPERT TEACHER
+            </h3>
+            <p>
+                An learning system based <br> on formalised teaching with
+            </p>
+        </div>
+        <div>
+            <img src="vector2.png" style="background: #dd400c; padding: 20px; border-radius: 20px;">
+            <h3>
+                ONLINE CLASSES
+            </h3>
+            <p>
+                An learning system based <br> on formalised teaching with
+            </p>
+        </div>
+        <div>
+            <img src="vector1.png" style="background: #0711c9; padding: 20px; border-radius: 20px;">
+            <h3>
+                24/7 SUPPORT
+            </h3>
+            <p>
+                An learning system based <br> on formalised teaching with
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
